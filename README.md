@@ -28,6 +28,15 @@ that actually ship.
 
 ---
 
+### 🏆 Conquistas · Achievements
+
+🥇 **1º lugar no DemoDay 2026 — Universidade Tiradentes (Unit)**, desafio *“Governança Digital
+da Prefeitura de Aracaju”*, entre **36 equipes**, com o **[Gestante Aju](https://github.com/teuzslima/gestante-aju)**
+(app de acompanhamento pré-natal). Projeto da **Residência Tecnológica** (Unit × Porto Digital ×
+Sebrae). · [📰 Matéria](https://portal.unit.br/blog/noticias/demo-day-desafia-calouros-de-ti-a-criarem-solucoes-para-a-governanca-digital-de-aracaju/)
+
+---
+
 ### 🛠️ Tech stack
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
@@ -47,7 +56,8 @@ that actually ship.
 
 | Projeto | Descrição | Stack |
 | --- | --- | --- |
-| 🖋️ **DecalQ** *(privado)* | SaaS **multi-tenant** PWA de stencils de tatuagem com IA | Next.js · Prisma · RLS · Replicate |
+| 🥇 **[Gestante Aju](https://github.com/teuzslima/gestante-aju)** | **1º lugar no DemoDay Unit** — app de pré-natal (gestante + painel de saúde) | Healthtech · GovTech |
+| 🖋️ **[DecalQ](https://github.com/teuzslima/decalq)** | SaaS **multi-tenant** PWA de stencils de tatuagem com IA | Next.js · Prisma · RLS · Replicate |
 | 📸 **[Galeria — Joana Mirelly](https://github.com/teuzslima/Galeria-Marketing-Joana)** | Entrega de galerias de fotos/vídeos de eventos | Next.js · Supabase · Cloudflare R2 |
 | 🛰️ **[TZSRecon](https://github.com/teuzslima/TZSRecon)** | Framework CLI de reconhecimento para testes autorizados | Python |
 | 🔐 **[QR Auth Security Analysis](https://github.com/teuzslima/qr-auth-security-analysis)** | Análise de segurança de autenticação por QR Code | OWASP |
