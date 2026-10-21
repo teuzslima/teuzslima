@@ -59,6 +59,7 @@ Sebrae). · [📰 Matéria](https://portal.unit.br/blog/noticias/demo-day-desafi
 | 🥇 **[Gestante Aju](https://github.com/teuzslima/gestante-aju)** | **1º lugar no DemoDay Unit** — app de pré-natal (gestante + painel de saúde) | Healthtech · GovTech |
 | 🖋️ **[DecalQ](https://github.com/teuzslima/decalq)** | SaaS **multi-tenant** PWA de stencils de tatuagem com IA | Next.js · Prisma · RLS · Replicate |
 | 📸 **[Galeria — Joana Mirelly](https://github.com/teuzslima/Galeria-Marketing-Joana)** | Entrega de galerias de fotos/vídeos de eventos | Next.js · Supabase · Cloudflare R2 |
+| 💰 **[Finance API](https://github.com/teuzslima/finance-api)** | API REST de finanças pessoais (JWT, testes, Docker, Swagger) | FastAPI · Python · JWT |
 | 🛰️ **[TZSRecon](https://github.com/teuzslima/TZSRecon)** | Framework CLI de reconhecimento para testes autorizados | Python |
 | 🔐 **[QR Auth Security Analysis](https://github.com/teuzslima/qr-auth-security-analysis)** | Análise de segurança de autenticação por QR Code | OWASP |
 | 🎓 **[SEDUC Professor](https://github.com/teuzslima/seduc-professor)** | App mobile-first do portal do professor | React · Vite |
