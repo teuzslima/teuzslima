@@ -1,78 +1,52 @@
-<div align="center">
+## Mateus de Lima Pereira
 
-# 👋 Olá, eu sou o Mateus de Lima Pereira
+Desenvolvedor full-stack e estudante de cibersegurança. Gosto de pegar um problema de alguém de
+verdade e levar até um produto em uso: banco, API, interface, deploy e o que mais precisar.
 
-**Desenvolvedor Full-Stack · Estudante de Cibersegurança**
-*Full-Stack Developer · Cybersecurity Student*
+Em 2026 meu time ficou em **1º lugar no DemoDay da Unit**, entre 36 equipes, no desafio de
+governança digital da Prefeitura de Aracaju, com o
+[Gestante Aju](https://github.com/teuzslima/gestante-aju), um app de acompanhamento pré-natal
+feito na Residência Tecnológica (Unit, Porto Digital e Sebrae).
+[Matéria da Unit](https://portal.unit.br/blog/noticias/demo-day-desafia-calouros-de-ti-a-criarem-solucoes-para-a-governanca-digital-de-aracaju/).
 
-[![GitHub](https://img.shields.io/badge/GitHub-teuzslima-181717?logo=github&logoColor=white)](https://github.com/teuzslima)
-[![Email](https://img.shields.io/badge/Email-mateusdelipee@gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:mateusdelipee@gmail.com)
+### No que estou trabalhando
 
-</div>
+**[Radium AI](https://github.com/teuzslima/radium-ai-showcase)**: assistente de laudos com IA
+para uma radiologista que lauda cerca de 400 exames por dia. É uma extensão do Chrome que
+captura as imagens, um backend em FastAPI que gera o rascunho com a API do Claude usando as
+máscaras de laudo dela, e uma tela de revisão feita para ser usada só pelo teclado. Coloquei
+validações no servidor para a IA não afirmar o que não dá para ver na imagem, e baixei o custo
+mensal estimado de R$ 1.100 para R$ 110 com medição. O código é privado; a página do link
+explica o projeto e mostra as telas.
 
----
+### Outros projetos
 
-### 🇧🇷 Sobre mim
+- **[DecalQ](https://github.com/teuzslima/decalq)**: SaaS multi-tenant (PWA) de stencils de
+  tatuagem com IA. Next.js, Prisma, Postgres com RLS, Replicate.
+- **[Galeria Joana Mirelly](https://github.com/teuzslima/Galeria-Marketing-Joana)**: entrega de
+  galerias de fotos e vídeos de eventos para clientes. Next.js, Supabase, Cloudflare R2.
+- **[Finance API](https://github.com/teuzslima/finance-api)**: API REST de finanças pessoais com
+  JWT, testes, Docker e Swagger. FastAPI.
+- **[TZSRecon](https://github.com/teuzslima/TZSRecon)**: ferramenta de linha de comando para
+  reconhecimento em testes de segurança autorizados. Python.
+- **[QR Auth Security Analysis](https://github.com/teuzslima/qr-auth-security-analysis)**:
+  análise de segurança de login por QR Code, com base no OWASP.
+- **[SEDUC Professor](https://github.com/teuzslima/seduc-professor)**: portal do professor
+  pensado para celular. React e Vite.
 
-Construo aplicações **full-stack** de ponta a ponta — do banco com segurança por linha (RLS)
-até interfaces **mobile-first** — e estudo **cibersegurança** (reconhecimento, OWASP,
-autenticação). Gosto de transformar ideias em produtos reais: SaaS multi-tenant, integrações
-com IA e plataformas de verdade em produção.
+### Ferramentas
 
-### 🇺🇸 About me
+No dia a dia: TypeScript, React e Next.js, Node.js, Python com FastAPI, PostgreSQL (Prisma,
+Supabase), Docker e GitHub Actions. Em segurança, estudo OWASP, reconhecimento e autenticação.
 
-I build **full-stack** applications end to end — from row-level-secured databases to
-**mobile-first** interfaces — and study **cybersecurity** (recon, OWASP, authentication).
-I enjoy turning ideas into real products: multi-tenant SaaS, AI integrations and platforms
-that actually ship.
+### Contato
 
----
-
-### 🏆 Conquistas · Achievements
-
-🥇 **1º lugar no DemoDay 2026 — Universidade Tiradentes (Unit)**, desafio *“Governança Digital
-da Prefeitura de Aracaju”*, entre **36 equipes**, com o **[Gestante Aju](https://github.com/teuzslima/gestante-aju)**
-(app de acompanhamento pré-natal). Projeto da **Residência Tecnológica** (Unit × Porto Digital ×
-Sebrae). · [📰 Matéria](https://portal.unit.br/blog/noticias/demo-day-desafia-calouros-de-ti-a-criarem-solucoes-para-a-governanca-digital-de-aracaju/)
-
----
-
-### 🛠️ Tech stack
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=node.js&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
+[mateusdelipee@gmail.com](mailto:mateusdelipee@gmail.com) · [github.com/teuzslima](https://github.com/teuzslima)
 
 ---
 
-### 🚀 Projetos em destaque · Featured projects
-
-| Projeto | Descrição | Stack |
-| --- | --- | --- |
-| 🥇 **[Gestante Aju](https://github.com/teuzslima/gestante-aju)** | **1º lugar no DemoDay Unit** — app de pré-natal (gestante + painel de saúde) | Healthtech · GovTech |
-| 🖋️ **[DecalQ](https://github.com/teuzslima/decalq)** | SaaS **multi-tenant** PWA de stencils de tatuagem com IA | Next.js · Prisma · RLS · Replicate |
-| 📸 **[Galeria — Joana Mirelly](https://github.com/teuzslima/Galeria-Marketing-Joana)** | Entrega de galerias de fotos/vídeos de eventos | Next.js · Supabase · Cloudflare R2 |
-| 💰 **[Finance API](https://github.com/teuzslima/finance-api)** | API REST de finanças pessoais (JWT, testes, Docker, Swagger) | FastAPI · Python · JWT |
-| 🛰️ **[TZSRecon](https://github.com/teuzslima/TZSRecon)** | Framework CLI de reconhecimento para testes autorizados | Python |
-| 🔐 **[QR Auth Security Analysis](https://github.com/teuzslima/qr-auth-security-analysis)** | Análise de segurança de autenticação por QR Code | OWASP |
-| 🎓 **[SEDUC Professor](https://github.com/teuzslima/seduc-professor)** | App mobile-first do portal do professor | React · Vite |
-
----
-
-<div align="center">
-
-### 📊 GitHub
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=teuzslima&show_icons=true&hide_border=true&theme=default)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=teuzslima&layout=compact&hide_border=true)
-
-📫 **Contato:** [mateusdelipee@gmail.com](mailto:mateusdelipee@gmail.com)
-
-</div>
+<sub>**In English:** full-stack developer and cybersecurity student. I take real problems all
+the way to products people use. Currently building **Radium AI**, an AI-assisted radiology
+reporting tool (Chrome extension, FastAPI, Claude API) with server-side guardrails and measured
+cost optimization. Won 1st place (out of 36 teams) at Unit's 2026 DemoDay with Gestante Aju,
+a prenatal care app.</sub>
