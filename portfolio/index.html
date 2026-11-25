@@ -213,6 +213,21 @@ section{position:relative}
 
 .card-visual .shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
 .card:hover .card-visual .shot{transform:scale(1.04)}
+.card.radium{border-color:rgba(31,168,255,.32);background:radial-gradient(80% 80% at 0% 0%,rgba(31,168,255,.1),transparent 60%),linear-gradient(160deg,var(--surface-2),var(--surface) 60%)}
+.card.radium .card-kind{color:#5cc2ff}
+.rad-visual{background:#07101f;aspect-ratio:1724/856}
+.rad-visual .shot{object-fit:contain;object-position:center}
+.card:hover .rad-visual .shot{transform:scale(1.02)}
+.rad-facts{list-style:none;margin:2px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.rad-facts li{border:1px solid rgba(31,168,255,.2);border-radius:14px;padding:11px 13px;background:rgba(7,9,13,.35);display:grid;gap:3px;min-width:0}
+.rad-facts b{font-family:var(--display);font-weight:500;font-size:.95rem;color:var(--fg);letter-spacing:-.01em}
+.rad-facts span{font-size:.78rem;line-height:1.4;color:var(--muted)}
+.btn.rad{background:#1fa8ff;color:#04121f}
+.btn.rad:hover{background:#4dbaff;box-shadow:0 10px 40px -8px rgba(31,168,255,.55)}
+.status span.pilot::before{background:#1fa8ff}
+.rad-note{font-family:var(--mono);font-size:.72rem;color:var(--dim);margin-top:-4px}
+.card.radium .desc{font-size:.93rem}
+@media (max-width:480px){.rad-facts{grid-template-columns:1fr}}
 /* mock visuals */
 .mock{position:absolute;inset:0;padding:6%;display:flex}
 .mk-aju{background:radial-gradient(70% 70% at 30% 20%,rgba(255,150,190,.18),transparent 60%),radial-gradient(60% 60% at 90% 90%,rgba(242,196,92,.16),transparent 60%),#0e0b14;align-items:center;justify-content:center;gap:5%}
@@ -515,10 +530,10 @@ footer .mono{font-size:.75rem}
   <div class="wrap">
     <div class="sec-head">
       <div>
-        <div class="eyebrow" style="margin-bottom:20px">Projetos · 9 no GitHub</div>
+        <div class="eyebrow" style="margin-bottom:20px">Projetos · 8 em destaque</div>
         <h2 class="sec-title">Coisas que<br><em>eu construí.</em></h2>
       </div>
-      <p>De healthtech premiada a SaaS com IA, APIs e ferramentas de segurança. Cada um resolveu um problema de verdade.</p>
+      <p>Healthtech premiada, IA aplicada a laudos médicos, SaaS, APIs e ferramentas de segurança. Cada um nasceu de um problema concreto.</p>
     </div>
 
     <div class="stack" id="stack">
@@ -552,13 +567,40 @@ footer .mono{font-size:.75rem}
         </div>
       </article>
 
-      <!-- 2 DecalQ -->
-      <article class="card" style="--i:1">
+      <!-- 2 Radium AI -->
+      <article class="card radium" style="--i:1">
+        <div class="card-visual rad-visual">
+          <img class="shot" src="img/radium/telas.png" alt="Painel lateral do Radium AI no Chrome em quatro telas: captura, rascunho, revisão e métricas, com dados de demonstração" loading="lazy" width="1724" height="856">
+        </div>
+        <div class="card-info">
+          <div class="card-top"><span class="card-kind">IA aplicada · Saúde</span><span class="card-idx">02</span></div>
+          <h3>Radium AI</h3>
+          <p class="sub">Assistente de laudos radiológicos com IA, feito para uma radiologista real.</p>
+          <p class="desc">Ela lauda cerca de 400 radiografias e 30 ressonâncias por dia numa plataforma que não exporta exames. Um atalho captura a tela, a API do Claude escreve o rascunho com as máscaras dela, e ela revisa e aprova pelo teclado. A decisão final é sempre da médica.</p>
+          <ul class="rad-facts">
+            <li><b>~R$ 1.100 → ~R$ 110</b><span>custo mensal medido, com modelo por tipo de exame e prompt caching</span></li>
+            <li><b>Regras no servidor</b><span>frase de “normal” sobre estrutura que a IA não avaliou é retirada</span></li>
+            <li><b>215 + 29 testes</b><span>API e extensão, E2E em Chromium real e CI no GitHub Actions</span></li>
+            <li><b>LGPD</b><span>2FA obrigatório, imagens cifradas e apagadas após 30 dias</span></li>
+          </ul>
+          <div class="card-foot">
+            <div class="card-links">
+              <a class="btn rad magnetic" href="radium-ai.html">Ver estudo de caso <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+              <a class="btn ghost" href="https://github.com/teuzslima/radium-ai-showcase" target="_blank" rel="noopener">Vitrine</a>
+            </div>
+            <div class="status"><span class="pilot">Piloto em preparação</span></div>
+          </div>
+          <p class="rad-note">Código privado, disponível para avaliação técnica mediante solicitação.</p>
+        </div>
+      </article>
+
+      <!-- 3 DecalQ -->
+      <article class="card" style="--i:2">
         <div class="card-visual">
           <img class="shot" src="img/decalq.jpg" alt="Página inicial do DecalQ: “Sua imagem vira arte pronta pra usar”, com exemplo de foto virando decalque" loading="lazy" width="1440" height="990">
         </div>
         <div class="card-info">
-          <div class="card-top"><span class="card-kind">SaaS · IA</span><span class="card-idx">02</span></div>
+          <div class="card-top"><span class="card-kind">SaaS · IA</span><span class="card-idx">03</span></div>
           <h3>DecalQ</h3>
           <p class="sub">SaaS PWA multi-tenant que gera stencils de tatuagem com IA.</p>
           <p class="desc">Next.js 14 com Prisma e PostgreSQL protegido por RLS, geração via Replicate (SDXL + ControlNet), arquivos no Cloudflare R2 e pagamentos com Mercado Pago.</p>
@@ -574,12 +616,12 @@ footer .mono{font-size:.75rem}
       </article>
 
       <!-- 3 Galeria -->
-      <article class="card" style="--i:2">
+      <article class="card" style="--i:3">
         <div class="card-visual">
           <img class="shot" style="object-position:center" src="img/galeria.jpg" alt="Página inicial da galeria Joana Mirelly Marketing: “Memórias entregues com delicadeza”" loading="lazy" width="1440" height="990">
         </div>
         <div class="card-info">
-          <div class="card-top"><span class="card-kind">Plataforma · Cliente real</span><span class="card-idx">03</span></div>
+          <div class="card-top"><span class="card-kind">Plataforma · Cliente real</span><span class="card-idx">04</span></div>
           <h3>Galeria — Joana Mirelly</h3>
           <p class="sub">Entrega de galerias de fotos e vídeos de eventos.</p>
           <p class="desc">Plataforma full-stack com painel administrativo, URLs assinadas para mídia privada e download completo em ZIP para cada cliente.</p>
@@ -595,7 +637,7 @@ footer .mono{font-size:.75rem}
       </article>
 
       <!-- 4 Finance API -->
-      <article class="card" style="--i:3">
+      <article class="card" style="--i:4">
         <div class="card-visual">
           <div class="mock mk-code" aria-hidden="true">
             <div class="ep"><b class="post">POST</b>/auth/login</div>
@@ -611,7 +653,7 @@ footer .mono{font-size:.75rem}
           </div>
         </div>
         <div class="card-info">
-          <div class="card-top"><span class="card-kind">Backend · API</span><span class="card-idx">04</span></div>
+          <div class="card-top"><span class="card-kind">Backend · API</span><span class="card-idx">05</span></div>
           <h3>Finance API</h3>
           <p class="sub">API REST de finanças pessoais em FastAPI.</p>
           <p class="desc">Autenticação JWT, categorias, transações e resumo mensal. Testes com pytest, Docker e documentação Swagger gerada automaticamente.</p>
@@ -624,7 +666,7 @@ footer .mono{font-size:.75rem}
       </article>
 
       <!-- 5 TZSRecon -->
-      <article class="card" style="--i:4">
+      <article class="card" style="--i:5">
         <div class="card-visual">
           <div class="mock mk-term" aria-hidden="true"><span class="p">$</span> tzsrecon scan alvo-autorizado.lab --ports top100
 <span class="f">[*] resolvendo host ....... 10.0.0.12</span>
@@ -637,7 +679,7 @@ footer .mono{font-size:.75rem}
 <span class="p">$</span> <span class="caret"></span></div>
         </div>
         <div class="card-info">
-          <div class="card-top"><span class="card-kind">Cibersegurança · CLI</span><span class="card-idx">05</span></div>
+          <div class="card-top"><span class="card-kind">Cibersegurança · CLI</span><span class="card-idx">06</span></div>
           <h3>TZSRecon</h3>
           <p class="sub">Framework CLI de reconhecimento para testes autorizados.</p>
           <p class="desc">Port scan, banner grabbing, OSINT e WHOIS em uma ferramenta de linha de comando em Python, feita para fins educacionais e pentests com autorização.</p>
@@ -650,7 +692,7 @@ footer .mono{font-size:.75rem}
       </article>
 
       <!-- 6 QR auth -->
-      <article class="card" style="--i:5">
+      <article class="card" style="--i:6">
         <div class="card-visual">
           <div class="mock mk-qr" aria-hidden="true">
             <canvas id="qrCanvas" width="210" height="210"></canvas>
@@ -663,7 +705,7 @@ footer .mono{font-size:.75rem}
           </div>
         </div>
         <div class="card-info">
-          <div class="card-top"><span class="card-kind">Cibersegurança · Pesquisa</span><span class="card-idx">06</span></div>
+          <div class="card-top"><span class="card-kind">Cibersegurança · Pesquisa</span><span class="card-idx">07</span></div>
           <h3>QR Auth Security Analysis</h3>
           <p class="sub">Análise de segurança da autenticação por QR Code.</p>
           <p class="desc">Estudo educacional de vulnerabilidades, cenário de ataque teórico e mitigações, guiado pelo OWASP Top 10 e pelo ASVS.</p>
@@ -676,7 +718,7 @@ footer .mono{font-size:.75rem}
       </article>
 
       <!-- 7 SEDUC -->
-      <article class="card" style="--i:6">
+      <article class="card" style="--i:7">
         <div class="card-visual">
           <div class="mock mk-seduc" aria-hidden="true">
             <div class="phone">
@@ -688,7 +730,7 @@ footer .mono{font-size:.75rem}
           </div>
         </div>
         <div class="card-info">
-          <div class="card-top"><span class="card-kind">Frontend · Educação</span><span class="card-idx">07</span></div>
+          <div class="card-top"><span class="card-kind">Frontend · Educação</span><span class="card-idx">08</span></div>
           <h3>SEDUC Professor</h3>
           <p class="sub">App mobile-first do portal do professor da SEDUC Sergipe.</p>
           <p class="desc">Tela “Aulas de Hoje” construída com React 19, Vite e React Router, seguindo o design system do Squad 60.</p>
@@ -704,13 +746,8 @@ footer .mono{font-size:.75rem}
     <div class="more">
       <div class="more-head"><h3>Mais no GitHub</h3><p>Estudos e projetos em andamento.</p></div>
       <a class="more-item" href="https://github.com/teuzslima/Atividades-Laboratorio" target="_blank" rel="noopener">
-        <span class="n">08</span>
-        <div><h4>Atividades de Laboratório</h4><p>Exercícios da disciplina de Laboratório de Programação.</p></div>
-        <span class="arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
-      </a>
-      <a class="more-item" href="https://github.com/teuzslima/radium-ai" target="_blank" rel="noopener">
         <span class="n">09</span>
-        <div><h4>Radium AI</h4><p>Em desenvolvimento.</p></div>
+        <div><h4>Atividades de Laboratório</h4><p>Exercícios da disciplina de Laboratório de Programação.</p></div>
         <span class="arrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
       </a>
       <a class="more-item" href="https://github.com/teuzslima?tab=repositories" target="_blank" rel="noopener">
@@ -827,7 +864,7 @@ footer .mono{font-size:.75rem}
 
     <div class="tools">
       <span class="lbl">Também uso</span>
-      <span>Git &amp; GitHub</span><span>JWT</span><span>Row-Level Security</span><span>pytest</span><span>REST APIs</span><span>OpenAPI / Swagger</span><span>PWA</span><span>Replicate (IA)</span><span>Mercado Pago</span><span>Vercel</span><span>Linux</span>
+      <span>Claude API</span><span>Chrome Extension (MV3)</span><span>SQLAlchemy · Alembic</span><span>Playwright</span><span>Vitest</span><span>GitHub Actions</span><span>Caddy</span><span>Git &amp; GitHub</span><span>JWT</span><span>Row-Level Security</span><span>pytest</span><span>REST APIs</span><span>OpenAPI / Swagger</span><span>PWA</span><span>Replicate (IA)</span><span>Mercado Pago</span><span>Vercel</span><span>Linux</span>
     </div>
   </div>
 </section>
@@ -884,7 +921,7 @@ footer .mono{font-size:.75rem}
     ['p', '$ ', 'w', 'cat conquistas.txt'],
     ['g', '[1º] DemoDay Unit 2026 — 36 equipes — Gestante Aju'],
     ['p', '$ ', 'w', 'ls ~/projetos'],
-    ['', 'gestante-aju  decalq  galeria  finance-api\ntzsrecon  qr-auth  seduc-professor'],
+    ['', 'gestante-aju  radium-ai  decalq  galeria\nfinance-api  tzsrecon  qr-auth  seduc-professor'],
     ['p', '$ ', 'w', 'echo $STATUS'],
     ['', 'aberto a oportunidades ✓']
   ];
@@ -1098,7 +1135,7 @@ footer .mono{font-size:.75rem}
       const cards = $$('#stack .card');
       cards.forEach((card, i) => {
         if (i === cards.length - 1) return;
-        gsap.to(card, { scale: .92 + i * .005, filter: 'brightness(.55)', ease: 'none', scrollTrigger: { trigger: cards[i + 1], start: 'top bottom', end: 'top 120px', scrub: true } });
+        gsap.fromTo(card, { scale: 1, filter: 'brightness(1)' }, { scale: .92 + i * .005, filter: 'brightness(.55)', ease: 'none', scrollTrigger: { trigger: cards[i + 1], start: 'top bottom', end: 'top 120px', scrub: true } });
       });
       // horizontal journey
       const track = $('#jTrack');
