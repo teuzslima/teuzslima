@@ -1,5 +1,7 @@
 ## Mateus de Lima Pereira
 
+[![Portfólio](https://img.shields.io/badge/Portf%C3%B3lio-acessar-4d8dff?style=flat-square)](https://claude.ai/artifact/GttjFtJUawguDeNzB5bL1h) [![LinkedIn](https://img.shields.io/badge/LinkedIn-teuzslima-0a66c2?style=flat-square)](https://www.linkedin.com/in/teuzslima/) ![DemoDay](https://img.shields.io/badge/%F0%9F%8F%86_DemoDay_Unit_2026-1%C2%BA_lugar-f2c45c?style=flat-square)
+
 Desenvolvedor full-stack e estudante de cibersegurança. Gosto de pegar um problema de alguém de
 verdade e levar até um produto em uso: banco, API, interface, deploy e o que mais precisar.
 
@@ -41,7 +43,9 @@ Supabase), Docker e GitHub Actions. Em segurança, estudo OWASP, reconhecimento 
 
 ### Contato
 
-[mateusdelipee@gmail.com](mailto:mateusdelipee@gmail.com) · [github.com/teuzslima](https://github.com/teuzslima)
+🌐 [Portfólio](https://claude.ai/artifact/GttjFtJUawguDeNzB5bL1h) · 💼 [LinkedIn](https://www.linkedin.com/in/teuzslima/) · ✉️ [mateusdelipee@gmail.com](mailto:mateusdelipee@gmail.com)
+
+Disponível para estágio, freelas e projetos full-stack.
 
 ---
 
