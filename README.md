@@ -43,7 +43,7 @@ Supabase), Docker e GitHub Actions. Em segurança, estudo OWASP, reconhecimento 
 
 ### Contato
 
-🌐 [Portfólio](https://claude.ai/artifact/GttjFtJUawguDeNzB5bL1h) · 💼 [LinkedIn](https://www.linkedin.com/in/teuzslima/) · ✉️ [mateusdelipee@gmail.com](mailto:mateusdelipee@gmail.com)
+ 💼 [LinkedIn](https://www.linkedin.com/in/teuzslima/) · ✉️ [mateusdelipee@gmail.com](mailto:mateusdelipee@gmail.com)
 
 Disponível para estágio, freelas e projetos full-stack.
 
